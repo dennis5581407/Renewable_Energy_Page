@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .header {
+            width: cal(100% - 1px);
+            height: 50px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        #logo {
+            position: absolute;
+            top: 3px;
+            left: 50px;
+        }
+
+        .header span{
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            font-size: 24px;
+        }
+
+        .header span img{
+            vertical-align: middle;
+        }
+
+        .container {
+            width: 1300px;
+            height: 700px;
+            margin: auto;
+            /* border: 1px solid black;
+            background-color: gray; */
+            display: flex;
+        }
+
+        .wrap {
+            /* border: 1px solid black; */
+        }
+
+        .left-wrap {
+            width: 81%;
+        }
+
+        .right-wrap {
+            width: 19%;
+        }
+
+        .right-content {
+            height: 223px;
+            border: 1px solid black;
+            background-color: white;
+            margin: 5px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            /* border: 1px solid black; */
+            height: 38%;
+            /* background-color: white; */
+            margin: 15px 5px 15px 15px;
+        }
+
+        .last-content {
+            height: 15%;
+            display: flex;
+        }
+
+        .main {
+            border: 1px solid black;
+            margin: 0px 5px;
+            text-align: center;
+        }
+
+        .item-1 {
+            width: 15%;
+            border: unset;
+        }
+
+        .item-2 {
+            width: 22%;
+        }
+
+        .item-3 {
+            width: 60%;
+            font-size: 24px;
+        }
+
+        .item-1-item{
+            width: 100%;
+            height: 31%;
+            text-align: center;
+            border: solid 1px black;
+        }
+        .item-1-item-middle{
+            margin: 7px 0px;
+        }
+
+        .item-4{
+            width: 38%;
+            font-size: 24px;
+        }
+
+        .item-5{
+            width: 60%;
+            font-size: 24px;
+        }
+
+        .last-main{
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 100%;
+            height: 80%;
+            margin: 8px 7px 0px;
+            box-shadow: 2px 3px 3px rgb(46, 46, 46);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img id="logo" src="https://picsum.photos/100/45?random=1" alt="LOGO">
+        <span>2020/01/01&emsp;17:30&emsp;<img src="https://picsum.photos/25/25?random=2" alt="">  <img
+                src="https://picsum.photos/25/25?random=3" alt="">  <img src="https://picsum.photos/25/25?random=4"
+                alt=""></span>
+    </div>
+
+    <div class="container">
+        <div class="wrap left-wrap">
+            <div class="content">
+                <div class="main item-1">
+                    <div class="item-1-item">總登錄數</div>
+                    <div class="item-1-item item-1-item-middle">連線數</div>
+                    <div class="item-1-item">連線率</div>
+                </div>
+                <div class="main item-2">
+
+                </div>
+                <div class="main item-3">
+                    家電連線推移(近一個月)
+                </div>
+            </div>
+            <div class="content">
+                <div class="main item-4">
+                    家電別接續率
+                </div>
+                <div class="main item-5">
+                    家電別接續推移(近三年)
+                </div>
+            </div>
+            <div class="content last-content">
+                <div class="last-main">
+                    空調
+                </div>
+                <div class="last-main">
+                    除濕機
+                </div>
+                <div class="last-main">
+                    洗衣機
+                </div>
+                <div class="last-main">
+                    冰箱
+                </div>
+                <div class="last-main">
+                    預備
+                </div>
+                <div class="last-main">
+                    預備
+                </div>
+                <div class="last-main">
+                    預備
+                </div>
+            </div>
+        </div>
+        <div class="wrap right-wrap">
+            <div class="right-content">
+                連線區域比例
+            </div>
+            <div class="right-content">
+                連線數24H推移
+            </div>
+            <div class="right-content">
+                Server健康狀況
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
